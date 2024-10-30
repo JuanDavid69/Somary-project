@@ -13,7 +13,7 @@ const Contact = () => {
 
       <div className="video-banner">
         <video autoPlay loop muted className="banner-video">
-          <source src="/VID-20241024-WA0018.mp4" type="video/mp4" />
+          <source src={`${process.env.PUBLIC_URL}/VID-20241024-WA0018.mp4`} type="video/mp4" />
           Tu navegador no soporta videos HTML5.
         </video>
       </div>

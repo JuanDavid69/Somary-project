@@ -34,7 +34,7 @@ const Header = () => {
 
       <header className={`header ${scrolled ? 'scrolled' : ''}`}>
         <a href="/" className="logo-link">
-          <img src="/logoSomary-removebg-preview.png" alt="Logo Somary" className="logo" />
+          <img src={`${process.env.PUBLIC_URL}/logoSomary-removebg-preview.png`} alt="Logo Somary" className="logo" />
         </a>
         <div className="menu-icon" onClick={toggleMenu}>
           ☰ {/* Icono de menú */}
@@ -56,7 +56,7 @@ const Header = () => {
       {location.pathname === '/' && (
         <div className="video-banner">
           <video autoPlay loop muted className="banner-video">
-            <source src="/VID-20241029-WA0011.mp4" type="video/mp4" />
+            <source src={`${process.env.PUBLIC_URL}/VID-20241029-WA0011.mp4`} type="video/mp4" />
             Tu navegador no soporta videos HTML5.
           </video>
         </div>

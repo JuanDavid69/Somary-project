@@ -13,11 +13,11 @@ const About = () => {
 
       {/* Banner de video */}
       <div className="video-banner">
-        <video autoPlay loop muted className="banner-video">
-          <source src="/VID-20241024-WA0017.mp4" type="video/mp4" />
+      <video autoPlay loop muted className="banner-video">
+       <source src={`${process.env.PUBLIC_URL}/VID-20241024-WA0017.mp4`} type="video/mp4" />
           Tu navegador no soporta videos HTML5.
         </video>
-      </div>
+        </div>
       
       {/* Sección de información de la marca */}
       <section className="about-info">
@@ -31,16 +31,16 @@ const About = () => {
           </p>
         </div>
         <div className="img-somary">
-          <img src="/logoSomary-removebg-preview.png" alt="Logo de SOMARY" />
-        </div>
+  <img src={`${process.env.PUBLIC_URL}/logoSomary-removebg-preview.png`} alt="Logo de SOMARY" />
+    </div>
       </section>
 
       <div className="about-video">
-        <video autoPlay loop muted className="about-extra-video">
-          <source src="/VID-20241029-WA0006.mp4" type="video/mp4" />
-          Tu navegador no soporta videos HTML5.
-        </video>
-      </div>
+  <video autoPlay loop muted className="about-extra-video">
+    <source src={`${process.env.PUBLIC_URL}/VID-20241029-WA0006.mp4`} type="video/mp4" />
+    Tu navegador no soporta videos HTML5.
+  </video>
+</div>
 
       {/* Sección de misión */}
       <section className="about-info">
@@ -50,7 +50,7 @@ const About = () => {
             Nuestra misión es brindar confianza y calidad a nuestros clientes con cada una de nuestras prendas, utilizando los mejores materiales y diseños exclusivos.
           </p>
           <div className="img-somary-black">
-            <img src="/IMG-20241024-WA0016.jpg" alt="SOMARY misión" />
+            <img src={`${process.env.PUBLIC_URL}/IMG-20241024-WA0016.jpg`} alt="SOMARY misión" />
           </div>
         </div>
       </section>
@@ -66,11 +66,11 @@ const About = () => {
       </section>
 
       <div className="about-video">
-        <video autoPlay loop muted className="about-extra-video">
-          <source src="/VID-20241029-WA0005.mp4" type="video/mp4" />
-          Tu navegador no soporta videos HTML5.
-        </video>
-      </div>
+  <video autoPlay loop muted className="about-extra-video">
+    <source src={`${process.env.PUBLIC_URL}/VID-20241029-WA0005.mp4`} type="video/mp4" />
+    Tu navegador no soporta videos HTML5.
+  </video>
+</div>
     </div>
   );
 };

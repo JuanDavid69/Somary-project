@@ -14,35 +14,35 @@ const ProductList = () => {
       name: 'Conjunto boxyfit negro',
       description: 'Conjunto exclusivo color negro perfecto para cualquier día.',
       price: '$60.000',
-      image: "/img1.png"
+      image: process.env.PUBLIC_URL + "/img1.png"
     },
     {
       id: 2,
       name: 'Conjunto boxyfit gris',
       description: 'Descripción detallada del producto 2',
       price: '$60.000',
-      image: "/img2.png"
+      image: process.env.PUBLIC_URL + "/img2.png"
     },
     {
       id: 3,
       name: 'Conjunto boxyfit gris',
       description: 'Descripción detallada del producto 2',
       price: '$60.000',
-      image: "/img3.png"
+      image: process.env.PUBLIC_URL + "/img3.png"
     },
     {
       id: 4,
       name: 'Conjunto boxyfit gris',
       description: 'Descripción detallada del producto 2',
       price: '$60.000',
-      image: "/img4.png"
+      image: process.env.PUBLIC_URL + "/img4.png"
     },
     {
       id: 5,
       name: 'Conjunto boxyfit gris',
       description: 'Descripción detallada del producto 2',
       price: '$60.000',
-      image: "/img5.png"
+      image: process.env.PUBLIC_URL + "/img5.png"
     }
   ];
 
@@ -66,7 +66,7 @@ const ProductList = () => {
 
       <div className="video-banner">
         <video autoPlay loop muted className="banner-video">
-          <source src="/VID-20241024-WA0014.mp4" type="video/mp4" />
+           <source src={`${process.env.PUBLIC_URL}//VID-20241024-WA0014.mp4`} type="video/mp4" />
           Tu navegador no soporta videos HTML5.
         </video>
       </div>

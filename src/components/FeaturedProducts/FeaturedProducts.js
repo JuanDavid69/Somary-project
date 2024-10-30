@@ -8,13 +8,12 @@ import { Navigation, Autoplay } from 'swiper/modules';
 import './FeaturedProducts.css';
 
 const FeaturedProducts = () => {
-  const products = [
-    { id: 1, image: "/img1.png", name: 'Corte semi boxyfit negro' },
-    { id: 2, image: "/img2.png", name: 'Corte semi boxyfit gris' },
-    { id: 3, image: "/img3.png", name: 'Corte semi boxyfit rosa medio' },
-    // Agrega más productos según necesites
-  ];
-
+const products = [
+  { id: 1, image: process.env.PUBLIC_URL + "/img1.png", name: 'Corte semi boxyfit negro' },
+  { id: 2, image: process.env.PUBLIC_URL + "/img2.png", name: 'Corte semi boxyfit gris' },
+  { id: 3, image: process.env.PUBLIC_URL + "/img3.png", name: 'Corte semi boxyfit rosa medio' },
+  // Agrega más productos según necesites
+];
   return (
     <div className="featured-products-carousel">
    

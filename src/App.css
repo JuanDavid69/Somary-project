@@ -1,0 +1,21 @@
+
+.home-video {
+  
+  display: flex; /* Añadido para utilizar flexbox */
+  align-items: center; /* Centra verticalmente el contenido */
+  justify-content: center; /* Centra horizontalmente el contenido */
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Ajusta la altura del video según tus necesidades */
+  margin-top: 20px; /* Agrega un margen para separar el video del Welcome */
+  
+  overflow: hidden;
+}
+
+.home-banner-video {
+  padding-right:50px;
+  padding-left:50px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Asegura que el video cubra todo el contenedor */
+}

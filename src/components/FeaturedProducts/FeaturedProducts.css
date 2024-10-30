@@ -1,0 +1,32 @@
+.featured-products-carousel {
+  width: 100%;
+  max-width: 600px; /* Ajusta el tamaño máximo para que no sea tan grande */
+  margin: 0 auto; /* Centra el carrusel */
+  padding: 20px 0; /* Espacio arriba y abajo */
+}
+
+.product-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsión */
+  border-radius: 8px; /* Esquinas redondeadas, opcional */
+}
+
+h3 {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #333; /* Ajusta el color del texto */
+}
+@media (max-width: 768px) {
+  .products-slider .slick-slide {
+    width: 100%;
+  }
+}
+

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import './header.css';
 
@@ -40,16 +41,16 @@ const Header = () => {
           ☰ {/* Icono de menú */}
         </div>
         <nav className="nav-menu">
-          <ul className={isMenuOpen ? 'active' : ''}>
-            <li><a href="/" onClick={toggleMenu}>Inicio</a></li>
-            <li><a href="/products" onClick={toggleMenu}>Productos</a></li>
-            <li><a href="/about" onClick={toggleMenu}>Sobre Nosotros</a></li>
-            <li><a href="/contact" onClick={toggleMenu}>Contáctenos</a></li>
-            <li className="menu-image">
-              <img src="/logoSomary-removebg-preview.png" alt="Marca Somary" className="menu-brand-image" />
-            </li>
-          </ul>
-        </nav>
+  <ul className={isMenuOpen ? 'active' : ''}>
+    <li><Link to="/" onClick={toggleMenu}>Inicio</Link></li>
+    <li><Link to="/products" onClick={toggleMenu}>Productos</Link></li>
+    <li><Link to="/about" onClick={toggleMenu}>Sobre Nosotros</Link></li>
+    <li><Link to="/contact" onClick={toggleMenu}>Contáctenos</Link></li>
+    <li className="menu-image">
+      <img src={`${process.env.PUBLIC_URL}/logoSomary-removebg-preview.png`} alt="Marca Somary" className="menu-brand-image" />
+    </li>
+  </ul>
+</nav>
       </header>
 
       {/* Banner con GIF solo en la página de inicio */}

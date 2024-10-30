@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/mi-sitio-web/static/css/main.3243d248.css",
+    "main.js": "/mi-sitio-web/static/js/main.cd3a1abc.js",
+    "static/js/453.fb7ac37c.chunk.js": "/mi-sitio-web/static/js/453.fb7ac37c.chunk.js",
+    "index.html": "/mi-sitio-web/index.html",
+    "main.3243d248.css.map": "/mi-sitio-web/static/css/main.3243d248.css.map",
+    "main.cd3a1abc.js.map": "/mi-sitio-web/static/js/main.cd3a1abc.js.map",
+    "453.fb7ac37c.chunk.js.map": "/mi-sitio-web/static/js/453.fb7ac37c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3243d248.css",
+    "static/js/main.cd3a1abc.js"
+  ]
+}

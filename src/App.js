@@ -1,21 +1,17 @@
-// src/App.js
 import './App.css';
-import { BrowserRouter as Router, HashRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/header/header';
 import FeaturedProducts from './components/FeaturedProducts/FeaturedProducts';
 import './components/FeaturedProducts/FeaturedProducts.css';
 import About from './components/About/About';
 import ProductList from './components/ProductList/ProductList';
-import Contact from './components/Contact/contac'; // Asegúrate de que el nombre del archivo sea correcto
+import Contact from './components/Contact/contac';
 import Footer from './components/Footer/Footer';
 import Welcome from './components/Welcome/Welcome';
 
-// Definir el Router condicionalmente
-const RouterComponent = process.env.NODE_ENV === 'production' ? HashRouter : Router;
-
 function App() {
   return (
-    <RouterComponent>
+    <Router>
       <Header />
       <Routes>
         <Route path="/" element={
@@ -35,7 +31,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
-    </RouterComponent>
+    </Router>
   );
 }
 

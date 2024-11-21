@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Somary-project/static/css/main.3243d248.css",
+    "main.js": "/Somary-project/static/js/main.f399ae77.js",
+    "static/js/453.fb7ac37c.chunk.js": "/Somary-project/static/js/453.fb7ac37c.chunk.js",
+    "index.html": "/Somary-project/index.html",
+    "main.3243d248.css.map": "/Somary-project/static/css/main.3243d248.css.map",
+    "main.f399ae77.js.map": "/Somary-project/static/js/main.f399ae77.js.map",
+    "453.fb7ac37c.chunk.js.map": "/Somary-project/static/js/453.fb7ac37c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3243d248.css",
+    "static/js/main.f399ae77.js"
+  ]
+}
